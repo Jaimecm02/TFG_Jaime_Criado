@@ -24,8 +24,8 @@ This repository contains a Python script for extracting features from 3D models,
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/feature-extraction-3d.git
-   cd feature-extraction-3d
+   git clone https://github.com/Jaimecm02/TFG_Jaime_Criado.git
+   cd TFG_Jaime_Criado
    ```
 
 2. Install the required Python packages:
@@ -54,7 +54,10 @@ This repository contains a Python script for extracting features from 3D models,
 
 ## Functions
 
-- **`split_model(input_file)`**: Splits an STL file into separate files based on solids.
+- **`split_model(input_file)`**: Splits an STL file into separate files based on solids. 
+
+!['Lumen & Exterior mesh'](assets/foo.gif)
+
 - **`slice_z(mesh, n_slices=100)`**: Generates slices along the z-axis of a mesh.
 - **`distance2points_3d(point1, point2)`**: Calculates the Euclidean distance between two 3D points.
 - **`diam_calc(slice, center)`**: Calculates the diameter of a slice and the minimum distance to the center.
@@ -65,10 +68,14 @@ This repository contains a Python script for extracting features from 3D models,
 - **`centerline_aprox(slices, n=100)`**: Approximates the centerline using splines.
 - **`ortogonal_slices(centerline, mesh, n=100)`**: Generates orthogonal slices based on the centerline.
 
+!['Ortogonal Slices'](assets/foo2.gif)
+
 ## Output
 
 - **Visualizations**: Interactive 3D visualizations of the mesh, slices, and centerline.
 - **JSON File**: Contains geometrical parameters such as aneurysm length, maximum diameter, sac index, centerline length, tortuosity, aneurysm volume, thrombus volume, and total volume.
+
+!['Maximum diameter'](assets/foo4.gif)
 
 ## Example
 
