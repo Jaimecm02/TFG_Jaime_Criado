@@ -72,8 +72,8 @@ def plot_correlation_matrix(df: pd.DataFrame, title: str):
 
 def main():
     # Load data
-    control_data = load_json('datos_control.json')
-    rupture_data = load_json('datos_rupture.json')
+    control_data = load_json('src/data/datos_control.json')
+    rupture_data = load_json('src/data/datos_rupture.json')
 
     # Create DataFrames
     df_control = create_dataframe(control_data)
