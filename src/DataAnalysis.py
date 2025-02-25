@@ -5,6 +5,7 @@ import seaborn as sns
 from typing import Dict, Any
 import logging
 import numpy as np
+import os
 
 def load_json(file_path: str) -> Dict[str, Any]:
     """Load JSON data from a file."""
